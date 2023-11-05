@@ -6,31 +6,28 @@
     <link rel="stylesheet" href="/css/index-style.css" />
     <title>Joshua Anderson's Personal Profile</title>
   </head>
-  <header>
-    <h1>Joshua Anderson</h1>
-    <nav></nav>
-  </header>
   <body>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        <!-- brief biographical info -->
-      </p>
-      <p>
-        <!-- photo -->
-      </p>
-      <p>
-        <!-- contact information -->
-      </p>
-      <p>
-        <!-- links to personal networking sites: including at least linkedin and github -->
+    <header>
+      <div class="headshot">
+        <img
+          src="/img/headshot.png"
+          alt="Photograph of a smiling man on a city street"
+        />
+      </div>
+      <h1 class="name">Joshua Anderson</h1>
+      <div class="contact_info">
+        <em
+          >320 W Larwill St <br />Wooster, OH 44691
+          <br />JDAnderson0405@gmail.com <br />404.984.3422</em
+        >
+      </div>
+      <div class="links">
         <a href="https://github.com/Jdoasvhiuda" target="_blank"
           ><img
             src="/img/github.png"
             alt="Github.com Logo"
             class="inline_text_image"
-          />GitHub</a
-        ><br />
+        /></a>
         <a
           href="https://www.linkedin.com/in/joshua-anderson-8407a3ba/"
           target="_blank"
@@ -38,45 +35,84 @@
             src="/img/LinkedIn_logo_initials.png"
             alt="LinkedIn.com Logo"
             class="inline_text_image"
-          />LinkedIn</a
-        ><br />
+        /></a>
         <a href="https://trailblazer.me/id/janderson11" target="_blank"
           ><img
             src="/img/trailhead.png"
             alt="The Salesforce Trailhead Logo"
-            class="inline_text_image"
-          />Salesforce Trailhead</a
+            class="inline_text_image" /></a
         ><br />
-      </p>
-      <p>
-        <!-- list of skills -->
-      </p>
+      </div>
+    </header>
+    <nav class="navigation-bar">
+      <ul>
+        <li><a class="nav-link" href="#about-me">About Me</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Past Projects</a></li>
+      </ul>
+    </nav>
+
+    <section class="bio">
+      <div id="about-me" class="about_me">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+          quaerat molestiae. Enim dolorem mollitia consectetur quibusdam sunt
+          amet eligendi et veniam non alias explicabo a quo, quidem aliquid
+          officiis voluptatum repellat minus at labore consequatur repellendus!
+          Dolores laudantium velit repudiandae omnis quo possimus natus!
+          Repudiandae veritatis laudantium assumenda odit nisi voluptates, cum
+          eum possimus? Odit placeat soluta molestiae ad, fugiat eum
+          consequuntur eveniet! Eius optio assumenda possimus. Fugiat,
+          voluptatum debitis. Nisi obcaecati perspiciatis eaque. Nostrum
+          distinctio explicabo blanditiis? Optio sequi facere ipsam dolore
+          corrupti, enim aspernatur dolorum laborum fuga, rem illum in delectus
+          quis eveniet recusandae, iusto quibusdam sunt dolor corporis. Alias
+          commodi eaque vero dolore officia aliquid suscipit. Laborum enim iure
+          assumenda ipsum quam repellat asperiores aperiam laboriosam ex
+          voluptatem, maxime dolorum sed error aspernatur culpa hic nihil sunt
+          vitae qui dolore et fuga velit deleniti repudiandae. Sit possimus
+          dolor alias perferendis, placeat sapiente! Hic deserunt impedit iusto
+          nobis! Dolorem ea blanditiis enim quam nostrum assumenda numquam
+          consequatur excepturi quae consectetur officiis nam nobis pariatur
+          doloremque possimus voluptas provident alias, repudiandae, fugiat
+          dolorum libero voluptatem? Iste blanditiis vitae nisi, velit
+          aspernatur exercitationem, aliquam, quas vel doloremque sequi
+          excepturi ad ullam esse magni dolorem. A porro dicta similique debitis
+          nihil.
+        </p>
+      </div>
       <div id="education" class="education">
         <h2>Education</h2>
         <ul>
-          <li id="degrees" class="education">Degrees:</li>
-          <ul>
-            <a href="https://www.osu.edu/">
-              <img
-                id="osu_logo"
-                src="/img/Ohio_State_University-Logo.wine.png"
-                alt="The Ohio State University Logo. Go Buckeyes!"
-              />
-            </a>
-            <ul>
-              <li>Associates of Science, Sustainable Agriculture</li>
-            </ul>
-            <a href="https://www.delmar.edu/">
-              <img
-                id="delmar_logo"
-                src="/img/delmar_logo.png"
-                alt="Del Mar College Logo. Go Vikings!"
-              />
-            </a>
-            <ul>
-              <li>Associates of Applied Science, Automotive Technology</li>
-              <li>Associates of Science, Psychology</li>
-            </ul>
+          <ul class="colleges-list">
+            <li>
+              <a href="https://www.osu.edu/">
+                <img
+                  id="osu_logo"
+                  src="/img/Ohio_State_University-Logo.wine.png"
+                  alt="The Ohio State University Logo. Go Buckeyes!"
+                />
+              </a>
+              <ul id="osu-degrees">
+                <li>Associates of Science, Sustainable Agriculture</li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.delmar.edu/">
+                <img
+                  id="delmar_logo"
+                  src="/img/delmar_logo.png"
+                  alt="Del Mar College Logo. Go Vikings!"
+                />
+              </a>
+              <ul id="del-mar-degrees">
+                <li>Associates of Applied Science, Automotive Technology</li>
+                <li>Associates of Science, Psychology</li>
+              </ul>
+            </li>
           </ul>
         </ul>
       </div>
@@ -121,7 +157,7 @@
               target="_blank"
               >Salesforce Certified Experience Cloud Consultant (20547070)</a
             >
-            <li>Trailhead Superbadges</li>
+            <li>Trailhead Superbadges:</li>
             <ul>
               <li>Business Administration Specialist</li>
               <li>App Customization Specialist</li>
@@ -149,9 +185,12 @@
                 Development:
                 <ul>
                   <li>Object Oriented Programming</li>
-                  <li>SCRUM</li>
-                  <li>Kanban</li>
                   <li>Technical Requirement Gathering</li>
+                  <li>Agile Methodologies</li>
+                  <ul>
+                    <li>SCRUM</li>
+                    <li>Kanban</li>
+                  </ul>
                 </ul>
               </li>
               <li id="skills_adept_salesforce" class="skills_salesforce">
@@ -224,13 +263,12 @@
               <li id="skills_proficient_development" class="skills_development">
                 Development:
                 <ul>
-                  <li>Agile Methodologies</li>
-                  <li>Jira</li>
-                  <li>User Acceptance Testing</li>
-                  <li>SQL</li>
-                  <li>Java</li>
-                  <li>Waterfall Methodologies</li>
                   <li>Declarative Programming</li>
+                  <li>Java</li>
+                  <li>SQL</li>
+                  <li>Jira</li>
+                  <li>Waterfall Methodologies</li>
+                  <li>User Acceptance Testing</li>
                 </ul>
               </li>
               <li id="skills_proficient_salesforce" class="skills_salesforce">
@@ -294,27 +332,35 @@
           </li>
         </ul>
       </div>
-      <p>
-        <!-- additional pertinent information -->
-      </p>
+      <div>
+        <p>
+          <!-- additional pertinent information -->
+        </p>
+      </div>
       <p></p>
     </section>
-    <section>
-      <h2>Projects</h2>
+    <section id="projects">
+      <h2>Projects:</h2>
       <!-- Projects, consisting of at least three, each represented as an <article> -->
-      <article>
-        <!-- Article 1 -->
-        <!-- name of project, linked to GitHub repository or the repository/project's GitHub Pages -->
-        <!-- Screenshot -->
-        <!-- skills / technologies used -->
-      </article>
-      <article><!-- Article 2 --></article>
-      <article><!-- Article 3 --></article>
+      <div>
+        <article>
+          <!-- Article 1 -->
+          <!-- name of project, linked to GitHub repository or the repository/project's GitHub Pages -->
+          <!-- Screenshot -->
+          <!-- skills / technologies used -->
+        </article>
+      </div>
+      <div>
+        <article><!-- Article 2 --></article>
+      </div>
+      <div>
+        <article><!-- Article 3 --></article>
+      </div>
     </section>
+    <footer>
+      <!-- an appropriate <footer> element -->
+    </footer>
   </body>
-  <footer>
-    <!-- an appropriate <footer> element -->
-  </footer>
 </html>
 
 <!-- Assignment: https://wecancodeit.instructure.com/courses/176/assignments/2078?module_item_id=10418 -->
