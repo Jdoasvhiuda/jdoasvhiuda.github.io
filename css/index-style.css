@@ -74,10 +74,10 @@ header .links a {
   justify-content: space-around;
   padding: 0;
 }
-.navigation-bar ul li {
+/* .navigation-bar ul li {
   border-left: solid black 1px;
   padding: 0 7rem;
-}
+} */
 
 .bio {
   background: rgba(80, 80, 80, 0.4);
