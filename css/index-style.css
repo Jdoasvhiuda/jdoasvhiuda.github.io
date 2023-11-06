@@ -76,6 +76,10 @@ header .links a {
   justify-content: space-evenly;
   padding: 0;
 }
+.nav-link {
+  text-decoration: none;
+}
+
 /* .navigation-bar ul li {
   border-left: solid black 1px;
   padding: 0 7rem;
@@ -115,7 +119,6 @@ header .links a {
 .bio .about-me {
   grid-area: about_me;
   text-align: justify;
-  
 }
 .bio .education {
   grid-area: education;
