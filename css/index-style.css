@@ -35,7 +35,7 @@ header {
   align-items: center;
   justify-items: center;
   padding: 1rem;
-  background-color: rgb(242, 242, 242, 0.8);
+  background-color: rgb(242, 242, 242, 0.9);
   grid-template-areas:
     "headshot name"
     "headshot contact_info"
@@ -106,7 +106,9 @@ header .links a {
 .bio .education,
 .bio .certifications,
 .bio .skills {
+  background: rgba(242, 242, 242, 0.9);
   margin: 0.75rem;
+  padding: 1rem;
   border: black solid 1px;
   border-radius: 5px;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
@@ -129,13 +131,6 @@ header .links a {
 .bio .skills {
   grid-area: skills;
   /* max-width: 33%; */
-}
-.bio .about-me,
-.bio .education,
-.bio .certifications,
-.bio .skills {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 1rem;
 }
 
 .education ul {
