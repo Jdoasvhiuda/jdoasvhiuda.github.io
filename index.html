@@ -59,7 +59,7 @@
     </nav>
 
     <section class="bio">
-      <div id="about-me" class="about_me">
+      <div id="about-me" class="about-me">
         <h2>About Me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
@@ -179,186 +179,263 @@
           </ul>
         </ul>
       </div>
-      <div id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li class="skills_adept">
-            Adept in:
-            <ul>
-              <li id="skills_adept_development" class="skills_development">
-                Development:
-                <ul>
-                  <li>Object Oriented Programming</li>
-                  <li>Technical Requirement Gathering</li>
-                  <li>Agile Methodologies</li>
-                  <ul>
-                    <li>SCRUM</li>
-                    <li>Kanban</li>
-                  </ul>
-                </ul>
-              </li>
-              <li id="skills_adept_salesforce" class="skills_salesforce">
-                Salesforce:
-                <ul>
-                  <li>Lightning Experience</li>
-                  <li>Administration</li>
-                  <ul>
-                    <li>User Support &amp; Training</li>
-                    <li>Release Management</li>
+      <div id="skills" class="wrap-collapsible skills">
+        <input id="collapsible-skills" class="toggle" type="checkbox" checked />
+        <label for="collapsible-skills" class="label-toggle">Skills</label>
+        <div class="collapsible-skills-content">
+          <ul>
+            <div class="skills-inner">
+              <div id="adept-skills" class="wrap-collapsible">
+                <li class="skills_adept">
+                  <input
+                    id="collapsible-adept-skills"
+                    class="toggle"
+                    type="checkbox"
+                    checked
+                  />
+                  <label for="collapsible-adept-skills" class="label-toggle"
+                    >Adept in:</label
+                  >
+                  <div class="collapsible-adept-skills-content">
                     <ul>
-                      <li>Sandbox Deployment</li>
-                      <li>Copado</li>
-                      <li>Flosum</li>
-                      <li>vsCode Package</li>
-                      <li>Change Sets</li>
+                      <div class="adept-skills-inner">
+                        <li
+                          id="skills_adept_development"
+                          class="skills_development"
+                        >
+                          Development:
+                          <ul>
+                            <li>Object Oriented Programming</li>
+                            <li>Technical Requirement Gathering</li>
+                            <li>Agile Methodologies</li>
+                            <ul>
+                              <li>SCRUM</li>
+                              <li>Kanban</li>
+                            </ul>
+                          </ul>
+                        </li>
+                        <li
+                          id="skills_adept_salesforce"
+                          class="skills_salesforce"
+                        >
+                          Salesforce:
+                          <ul>
+                            <li>Lightning Experience</li>
+                            <li>Administration</li>
+                            <ul>
+                              <li>User Support &amp; Training</li>
+                              <li>Release Management</li>
+                              <ul>
+                                <li>Sandbox Deployment</li>
+                                <li>Copado</li>
+                                <li>Flosum</li>
+                                <li>vsCode Package</li>
+                                <li>Change Sets</li>
+                              </ul>
+                              <li>Data Management</li>
+                              <ul>
+                                <li>Ownbackup</li>
+                                <li>Data Loader</li>
+                                <li>Data Cleanup</li>
+                                <ul>
+                                  <li>Duplicate Rules</li>
+                                  <li>Duplicate Management</li>
+                                  <li>De-duping</li>
+                                  <li>Duplicate Merging</li>
+                                </ul>
+                                <li>Security &amp; Compliance</li>
+                                <ul>
+                                  <li>Profiles</li>
+                                  <li>Permission Sets</li>
+                                  <li>Sharing Rules</li>
+                                </ul>
+                                <li>Reports &amp; Dashboards</li>
+                              </ul>
+                              <li>Validation Rules</li>
+                              <li>App Exchange</li>
+                              <li>Reports &amp; Dashboards</li>
+                            </ul>
+                            <li>Development</li>
+                            <ul>
+                              <li>Flows</li>
+                              <ul>
+                                <li>Complex Flows</li>
+                                <li>Object Oriented Sub-flows</li>
+                                <li>Screen Flows</li>
+                                <li>Auto Launched Flows</li>
+                                <li>Flow Triggers</li>
+                              </ul>
+                              <li>Process Builder</li>
+                              <li>Customization</li>
+                              <li>Salesforce Object Query Language (SOQL)</li>
+                              <li>Workflows</li>
+                              <li>Lightning App Builder</li>
+                            </ul>
+                          </ul>
+                        </li>
+                        <!--
+                        <li id="skills_adept_general" class="skills_general">
+                          General:
+                          <ul>
+                            <li>general skill I am adept in</li>
+                          </ul>
+                        </li>  -->
+                      </div>
                     </ul>
-                    <li>Data Management</li>
-                    <ul>
-                      <li>Ownbackup</li>
-                      <li>Data Loader</li>
-                      <li>Data Cleanup</li>
+                  </div>
+                </li>
+              </div>
+              <li class="skills_proficient">
+                <div id="proficient-skills" class="wrap-collapsible">
+                  <li class="skills_proficient">
+                    <input
+                      id="collapsible-proficient-skills"
+                      class="toggle"
+                      type="checkbox"
+                    />
+                    <label
+                      for="collapsible-proficient-skills"
+                      class="label-toggle"
+                      >Proficient in:</label
+                    >
+                    <div class="collapsible-proficient-skills-content">
                       <ul>
-                        <li>Duplicate Rules</li>
-                        <li>Duplicate Management</li>
-                        <li>De-duping</li>
-                        <li>Duplicate Merging</li>
+                        <div class="proficient-skills-inner">
+                          <li
+                            id="skills_proficient_development"
+                            class="skills_development"
+                          >
+                            Development:
+                            <ul>
+                              <li>Declarative Programming</li>
+                              <li>Java</li>
+                              <li>SQL</li>
+                              <li>Jira</li>
+                              <li>Waterfall Methodologies</li>
+                              <li>User Acceptance Testing</li>
+                            </ul>
+                          </li>
+                          <li
+                            id="skills_proficient_salesforce"
+                            class="skills_salesforce"
+                          >
+                            Salesforce:
+                            <ul>
+                              <li>Community Administration</li>
+                              <li>APEX</li>
+                            </ul>
+                          </li>
+                          <li
+                            id="skills_proficient_general"
+                            class="skills_general"
+                          >
+                            General:
+                            <ul>
+                              <li>Replicon Time Management</li>
+                              <ul>
+                                <li>Reporting</li>
+                                <li>Replicon Excel Interface</li>
+                                <li>User Management</li>
+                                <li>Hierarchies and Team Access Settings</li>
+                              </ul>
+                              <li>Microsoft Office</li>
+                              <li>Customer Service</li>
+                              <li>Automotive Maintenance</li>
+                              <li>Automotive Repair</li>
+                              <li>Residential Construction</li>
+                              <li>Residential Electrical Repair</li>
+                            </ul>
+                          </li>
+                        </div>
                       </ul>
-                      <li>Security &amp; Compliance</li>
-                      <ul>
-                        <li>Profiles</li>
-                        <li>Permission Sets</li>
-                        <li>Sharing Rules</li>
-                      </ul>
-                      <li>Reports &amp; Dashboards</li>
-                    </ul>
-                    <li>Validation Rules</li>
-                    <li>App Exchange</li>
-                    <li>Reports &amp; Dashboards</li>
-                  </ul>
-                  <li>Development</li>
-                  <ul>
-                    <li>Flows</li>
-                    <ul>
-                      <li>Complex Flows</li>
-                      <li>Object Oriented Sub-flows</li>
-                      <li>Screen Flows</li>
-                      <li>Auto Launched Flows</li>
-                      <li>Flow Triggers</li>
-                    </ul>
-                    <li>Process Builder</li>
-                    <li>Customization</li>
-                    <li>Salesforce Object Query Language (SOQL)</li>
-                    <li>Workflows</li>
-                    <li>Lightning App Builder</li>
-                  </ul>
-                </ul>
+                    </div>
+                  </li>
+                  <li class="skills_experienced">
+                    <div id="experienced-skills" class="wrap-collapsible">
+                      <li class="skills_experienced">
+                        <input
+                          id="collapsible-experienced-skills"
+                          class="toggle"
+                          type="checkbox"
+                        />
+                        <label
+                          for="collapsible-experienced-skills"
+                          class="label-toggle"
+                          >Experienced in:</label
+                        >
+                        <div class="collapsible-experienced-skills-content">
+                          <ul>
+                            <div class="experienced-skills-inner">
+                              <li
+                                id="skills_experienced_development"
+                                class="skills_development"
+                              >
+                                Development:
+                                <ul>
+                                  <li>SQL</li>
+                                  <li>HTML</li>
+                                  <li>CSS</li>
+                                  <li>API</li>
+                                  <li>JavaScript</li>
+                                </ul>
+                              </li>
+                              <li
+                                id="skills_experienced_salesforce"
+                                class="skills_salesforce"
+                              >
+                                Salesforce:
+                                <ul>
+                                  <li>Visualforce</li>
+                                  <li>Mulesoft</li>
+                                  <li>Lightning Web Components</li>
+                                </ul>
+                              </li>
+                              <li
+                                id="skills_experienced_general"
+                                class="skills_general"
+                              >
+                                General:
+                                <ul>
+                                  <li>Residential Plumbing</li>
+                                </ul>
+                              </li>
+                            </div>
+                          </ul>
+                        </div>
+                      </li>
+                    </div>
+                  </li>
+                </div>
               </li>
-              <li id="skills_adept_general" class="skills_general">
-                General:
-                <ul>
-                  <li><!-- general skill I am adept in --></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="skills_proficient">
-            Proficient in:
-            <ul>
-              <li id="skills_proficient_development" class="skills_development">
-                Development:
-                <ul>
-                  <li>Declarative Programming</li>
-                  <li>Java</li>
-                  <li>SQL</li>
-                  <li>Jira</li>
-                  <li>Waterfall Methodologies</li>
-                  <li>User Acceptance Testing</li>
-                </ul>
-              </li>
-              <li id="skills_proficient_salesforce" class="skills_salesforce">
-                Salesforce:
-                <ul>
-                  <li>Community Administration</li>
-                  <li>APEX</li>
-                </ul>
-              </li>
-              <li id="skills_proficient_general" class="skills_general">
-                General:
-                <ul>
-                  <li>Replicon Time Management</li>
-                  <ul>
-                    <li>Reporting</li>
-                    <li>Replicon Excel Interface</li>
-                    <li>User Management</li>
-                    <li>Hierarchies and Team Access Settings</li>
-                  </ul>
-                  <li>Microsoft Office</li>
-                  <li>Customer Service</li>
-                  <li>Automotive Maintenance</li>
-                  <li>Automotive Repair</li>
-                  <li>Residential Construction</li>
-                  <li>Residential Electrical Repair</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="skills_experienced">
-            Experienced in:
-            <ul>
-              <li
-                id="skills_experienced_development"
-                class="skills_development"
-              >
-                Development:
-                <ul>
-                  <li>SQL</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>API</li>
-                  <li>JavaScript</li>
-                </ul>
-              </li>
-              <li id="skills_experienced_salesforce" class="skills_salesforce">
-                Salesforce:
-                <ul>
-                  <li>Visualforce</li>
-                  <li>Mulesoft</li>
-                  <li>Lightning Web Components</li>
-                </ul>
-              </li>
-              <li id="skills_experienced_general" class="skills_general">
-                General:
-                <ul>
-                  <li>Residential Plumbing</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            </div>
+          </ul>
+        </div>
+        <div>
+          <p>
+            <!-- additional pertinent information -->
+          </p>
+        </div>
+        <p></p>
       </div>
-      <div>
-        <p>
-          <!-- additional pertinent information -->
-        </p>
-      </div>
-      <p></p>
     </section>
-    <section id="projects">
-      <h2>Projects:</h2>
-      <!-- Projects, consisting of at least three, each represented as an <article> -->
-      <div>
-        <article>
-          <!-- Article 1 -->
-          <!-- name of project, linked to GitHub repository or the repository/project's GitHub Pages -->
-          <!-- Screenshot -->
-          <!-- skills / technologies used -->
-        </article>
-      </div>
-      <div>
-        <article><!-- Article 2 --></article>
-      </div>
-      <div>
-        <article><!-- Article 3 --></article>
+    <section class="projects">
+      <div id="past-projects" class="past-projects">
+        <h2>Projects:</h2>
+        <!-- Projects, consisting of at least three, each represented as an <article> -->
+        <div>
+          <article>
+            <!-- Article 1 -->
+            <!-- name of project, linked to GitHub repository or the repository/project's GitHub Pages -->
+            <!-- Screenshot -->
+            <!-- skills / technologies used -->
+          </article>
+        </div>
+        <div>
+          <article><!-- Article 2 --></article>
+        </div>
+        <div>
+          <article><!-- Article 3 --></article>
+        </div>
       </div>
     </section>
     <footer>
