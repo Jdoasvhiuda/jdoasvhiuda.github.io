@@ -93,8 +93,6 @@ header .links a {
 .bio {
   background: rgba(80, 80, 80, 0.4);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
   grid-template-areas: "bio_text bio_image";
   align-items: justify;
   justify-items: justify;
@@ -102,9 +100,7 @@ header .links a {
   padding: 1rem;
   grid-template-areas:
     "about_me about_me skills"
-    "education certifications skills"
-    "... ... skills"
-    "... ... skills";
+    "education certifications skills";
 }
 
 .bio .about-me,
@@ -117,6 +113,7 @@ header .links a {
   border: black solid 1px;
   border-radius: 5px;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+  height: fit-content;
 }
 .bio .about-me,
 .bio .education,
@@ -136,6 +133,30 @@ header .links a {
 .bio .skills {
   grid-area: skills;
   /* max-width: 33%; */
+}
+
+@media (max-width: 1400px) {
+  .bio {
+    grid-template-areas:
+      "about_me"
+      "certifications"
+      "education"
+      "skills";
+  }
+  .bio .about-me,
+  .bio .education,
+  .bio .certifications,
+  .bio .skills {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1800px) {
+  .bio {
+    grid-template-areas:
+      "about_me about_me"
+      "certifications skills"
+      "education skills";
+  }
 }
 
 .education ul {
@@ -165,7 +186,10 @@ header .links a {
 #projects-header {
   width: 100%;
 }
-
+.projects .past-projects #projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 .project-card {
   display: flex;
   flex-wrap: wrap;
@@ -181,6 +205,19 @@ header .links a {
   width: 20rem;
   height: 20rem;
 }
+.project-card .project-skills-used-list {
+  list-style-type: none;
+  padding: 4rem 0.5rem 0.5rem 0.5rem;
+}
+.project-card .project-skills-used-list h4 {
+  margin: 0;
+  padding: 0;
+}
+.project-card .project-skills-used-list ul {
+  margin: 0;
+  padding: 0 0 0 1rem;
+  text-wrap: wrap;
+}
 
 /* Collapsible list views css - source https://www.digitalocean.com/community/tutorials/css-collapsible */
 input[type="checkbox"] {
@@ -193,7 +230,7 @@ input[type="checkbox"] {
 
   cursor: pointer;
 
-  border-radius: 7px;
+  border-radius: 1rem;
   transition: all 0.25s ease-out;
 }
 
