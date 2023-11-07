@@ -8,6 +8,10 @@ html {
   background: url("/img/data-schema-background.png");
   background-position: center top;
 }
+#wcci_logo {
+  height: 1.5rem;
+  width: auto;
+}
 #osu_logo {
   height: 1.5rem;
   width: auto;
