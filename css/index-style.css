@@ -6,6 +6,7 @@
 }
 html {
   background: url("/img/data-schema-background.png");
+  background-position: center top;
 }
 #osu_logo {
   height: 1.5rem;
