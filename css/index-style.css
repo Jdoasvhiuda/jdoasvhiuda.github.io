@@ -183,7 +183,8 @@ header .links a {
 
   background: rgba(200, 200, 200, 0.8);
 }
-#projects-header {
+#projects-header,
+#guided-projects-header {
   width: 100%;
 }
 .projects .past-projects #projects-container {
@@ -208,15 +209,50 @@ header .links a {
 .project-card .project-skills-used-list {
   list-style-type: none;
   padding: 4rem 0.5rem 0.5rem 0.5rem;
+  width: 10rem;
 }
-.project-card .project-skills-used-list h4 {
+.project-card .project-skills-used-list h4,
+.project-card .guided-project-skills-used-list h4 {
   margin: 0;
   padding: 0;
 }
-.project-card .project-skills-used-list ul {
+.project-card .project-skills-used-list ul,
+.project-card .guided-project-skills-used-list ul {
   margin: 0;
-  padding: 0 0 0 1rem;
+  padding: 0;
   text-wrap: wrap;
+}
+.project-card .project-skills-used-list ul li,
+.project-card .guided-project-skills-used-list ul li {
+  margin: 0;
+  text-indent: -1rem;
+  padding-left: 1rem;
+  text-wrap: wrap;
+}
+.guided-project-card {
+  width: 20rem;
+}
+.guided-project-card a {
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+.guided-project-skills-used-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.guided-project-skills-used-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+.guided-project-skills-used-list ul li {
+  font-size: x-small;
+  display: inline;
+}
+.guided-project-skills-used-list ul li:not(:last-child)::after {
+  content: ", ";
 }
 
 /* Collapsible list views css - source https://www.digitalocean.com/community/tutorials/css-collapsible */
