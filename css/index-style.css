@@ -211,23 +211,21 @@ header .links a {
   padding: 4rem 0.5rem 0.5rem 0.5rem;
   width: 10rem;
 }
-.project-card .project-skills-used-list h4,
-.project-card .guided-project-skills-used-list h4 {
+.project-card .project-skills-used-list h4 {
   margin: 0;
   padding: 0;
 }
-.project-card .project-skills-used-list ul,
-.project-card .guided-project-skills-used-list ul {
+.project-card .project-skills-used-list ul {
   margin: 0;
   padding: 0;
   text-wrap: wrap;
 }
-.project-card .project-skills-used-list ul li,
-.project-card .guided-project-skills-used-list ul li {
+.project-card .project-skills-used-list ul li {
   margin: 0;
   text-indent: -1rem;
   padding-left: 1rem;
   text-wrap: wrap;
+  font-size: small;
 }
 .guided-project-card {
   width: 25rem;
@@ -243,9 +241,14 @@ header .links a {
   padding: 0;
   width: 100%;
 }
+.guided-project-skills-used-list h4 {
+  margin: 0;
+  padding: 0;
+}
 .guided-project-skills-used-list ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 .guided-project-skills-used-list ul li {
   font-size: x-small;
